@@ -1,2 +1,2 @@
-name = 'roop'
+name = 'roop-cam'
 version = '1.1.0'
