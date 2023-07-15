@@ -169,7 +169,7 @@ $InstallLocation = "`"$(Get-Location)`""
 
 # Create Roop-cam launchers (GPU - Nvidia):
 $ProgramName = "Roop-cam"
-$RunCommand = "python run.py --gpu-vendor nvidia"
+$RunCommand = "python run.py --execution-provider cuda"
 $LauncherName = "run-roop-nvidia"
 
 $ReinstallCommand = ""
@@ -188,21 +188,21 @@ if ($condaFound) {
 # Now for AMD, Intel and Apple graphics cards
 $ReinstallCommand = "python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`npython -m pip install -r requirements.txt"
 
-$RunCommand = "python run.py --gpu-vendor amd"
+$RunCommand = "python run.py --execution-provider amd"
 $LauncherName = "run-roop-amd"
 if ($condaFound) {
     New-LauncherWithErrorHandling -ProgramName $ProgramName -InstallLocation $InstallLocation -RunCommand $RunCommand -ReinstallCommand $ReinstallCommand -CondaPath $condaPath -CondaEnvironmentName $CondaEnvironmentName -LauncherName $LauncherName
 } else {
     New-LauncherWithErrorHandling -ProgramName $ProgramName -InstallLocation $InstallLocation -RunCommand $RunCommand -ReinstallCommand $ReinstallCommand -LauncherName $LauncherName
 }
-$RunCommand = "python run.py --gpu-vendor intel"
+$RunCommand = "python run.py --execution-provider intel"
 $LauncherName = "run-roop-intel"
 if ($condaFound) {
     New-LauncherWithErrorHandling -ProgramName $ProgramName -InstallLocation $InstallLocation -RunCommand $RunCommand -ReinstallCommand $ReinstallCommand -CondaPath $condaPath -CondaEnvironmentName $CondaEnvironmentName -LauncherName $LauncherName
 } else {
     New-LauncherWithErrorHandling -ProgramName $ProgramName -InstallLocation $InstallLocation -RunCommand $RunCommand -ReinstallCommand $ReinstallCommand -LauncherName $LauncherName
 }
-$RunCommand = "python run.py --gpu-vendor apple"
+$RunCommand = "python run.py --execution-provider apple"
 $LauncherName = "run-roop-apple"
 if ($condaFound) {
     New-LauncherWithErrorHandling -ProgramName $ProgramName -InstallLocation $InstallLocation -RunCommand $RunCommand -ReinstallCommand $ReinstallCommand -CondaPath $condaPath -CondaEnvironmentName $CondaEnvironmentName -LauncherName $LauncherName
