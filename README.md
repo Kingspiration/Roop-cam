@@ -15,9 +15,10 @@ Users of this software are expected to use this software responsibly while abidi
 ## How do I install it?
 
 ### Single command install
-#### 1.Clone repository
+#### 1. Clone Repository
+    https://github.com/hacksider/roop-cam.git
 #### 2.Open poweshell on super admin mode
-#### 3.Run the command below
+this will only work on super admin mode, then just run the command below
 ```
 roop-cam.ps1
 ```
