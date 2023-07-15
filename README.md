@@ -14,6 +14,14 @@ Users of this software are expected to use this software responsibly while abidi
 
 ## How do I install it?
 
+### Single command install
+#### 1.Clone repository
+#### 2.Open poweshell on super admin mode
+#### 3.Run the command below
+```
+roop-cam.ps1
+```
+
 ### Basic: It is more likely to work on your computer but it will also be very slow. You can follow instructions for the basic install (This usually runs via **CPU**)
 #### 1.Setup your platform
 -   python (3.10 recommended)
@@ -168,4 +176,5 @@ Looking for a CLI mode? Using the -s/--source argument will make the run program
 - [deepinsight](https://github.com/deepinsight): for their [insightface](https://github.com/deepinsight/insightface) project which provided a well-made library and models.
 - [havok2-htwo](https://github.com/havok2-htwo) : for sharing the code for webcam
 - [GosuDRM](https://github.com/GosuDRM/nsfw-roop) : for uncensoring roop
+- [Troublechute](https://www.youtube.com/@TroubleChute) : for the single command powershell script (slightly modified by me)
 - and all developers behind libraries used in this project.
