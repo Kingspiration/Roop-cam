@@ -27,8 +27,7 @@ def clear_face_analyser() -> Any:
 
 
 def get_one_face(frame: Frame, position: int = 0) -> Optional[Face]:
-    faces = get_many_faces(frame)
-    if faces:
+    if faces := get_many_faces(frame):
         try:
             return faces[position]
         except IndexError:

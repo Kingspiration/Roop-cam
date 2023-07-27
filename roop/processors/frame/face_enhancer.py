@@ -78,8 +78,7 @@ def enhance_face(target_face: Face, temp_frame: Frame) -> Frame:
 
 
 def process_frame(source_face: Face, reference_face: Face, temp_frame: Frame) -> Frame:
-    many_faces = get_many_faces(temp_frame)
-    if many_faces:
+    if many_faces := get_many_faces(temp_frame):
         for target_face in many_faces:
             temp_frame = enhance_face(target_face, temp_frame)
     return temp_frame
