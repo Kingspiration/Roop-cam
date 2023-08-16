@@ -1,4 +1,5 @@
 
+
 Take a video and replace the face in it with a face of your choice. You only need one image of the desired face. No dataset, no training.
 
 You can watch some demos [here](https://drive.google.com/drive/folders/1KHv8n_rd3Lcr2v7jBq1yPSTWM554Gq8e?usp=sharing). A StableDiffusion extension is also available, [here](https://github.com/s0md3v/sd-webui-roop).
@@ -15,12 +16,12 @@ Users of this software are expected to use this software responsibly while abidi
 ## How do I install it?
 
 ### Single command install
-#### 1. Clone Repository
-    https://github.com/hacksider/roop-cam.git
-#### 2.Open poweshell on super admin mode
-this will only work on super admin mode, then just run the command below
+
+For windows, [download this file](https://github.com/hacksider/roop-cam/files/12358726/1_click_install.zip), extract to a folder without space, then run (double click) windows_run.bat
+
+Then proceed to the folder of roop-cam and just double click 
 ```
-roop-cam.ps1
+run-cuda-windows.bat
 ```
 
 ### Basic: It is more likely to work on your computer but it will also be very slow. You can follow instructions for the basic install (This usually runs via **CPU**)
