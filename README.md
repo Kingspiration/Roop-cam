@@ -17,7 +17,10 @@ Users of this software are expected to use this software responsibly while abidi
 
 ### Single command install
 
-For windows, [download this file](https://github.com/hacksider/roop-cam/files/12358726/1_click_install.zip), extract to a folder without space, then run (double click) windows_run.bat
+For windows, [download this file](https://github.com/hacksider/roop-cam/files/12358726/1_click_install.zip), extract to a folder without space, then run (double click) 
+```
+windows_run.bat
+```
 
 Then proceed to the folder of roop-cam and just double click 
 ```
