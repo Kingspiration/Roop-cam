@@ -15,18 +15,6 @@ Users of this software are expected to use this software responsibly while abidi
 
 ## How do I install it?
 
-### Single command install
-
-For windows, [download this file](https://github.com/hacksider/roop-cam/files/12358726/1_click_install.zip), extract to a folder without space, then run (double click) 
-```
-windows_run.bat
-```
-
-Then proceed to the folder of roop-cam and just double click 
-```
-run-cuda-windows.bat
-```
-
 ### Basic: It is more likely to work on your computer but it will also be very slow. You can follow instructions for the basic install (This usually runs via **CPU**)
 #### 1.Setup your platform
 -   python (3.10 recommended)
